@@ -28,6 +28,12 @@ export const NavBar = () => {
         Tests
       </NavLink>
       <NavLink
+        className= 'nav-bar__sign'
+        to='/Sign_Up'
+      >
+        Registrarse
+      </NavLink>
+      <NavLink
         className={`${navLinkClass({ isActive: false })} nav-bar__button`}
         to='/Login'
       >

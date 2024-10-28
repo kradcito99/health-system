@@ -18,15 +18,21 @@
   }
 
   .nav-bar__logo {
-    width: 50px; 
+    width: 165px; 
     height: auto;
     margin-right: 10px; 
   }
-  
+  .nav-bar__sign{
+    padding: 8px;
+    background-color:rgb(90, 155, 16);
+    color: black;
+    margin-left: 800px;
+
+  }
   .nav-bar__button {
     background-color: #007bff;
     color: white;
-    padding: 10px 15px;
+    padding: 13px 20px;
     border-radius: 5px;
     font-size: 16px;
     text-decoration: none;
