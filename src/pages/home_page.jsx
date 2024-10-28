@@ -3,8 +3,8 @@ import React from 'react'
 export const HomePage = () => {
   return (
     <>
-      <p>¡Te damos la bienvenida a la Interfaz energética!</p>
-      <p>En esta página encontraras una 💡 ampolleta que podrás encender y apagar con un botón</p>
+      <h1>MIDE LA SALUD DE TU EQUIPO</h1>
+      <p>Te presentamos distintas pruebas para que puedas medir la salud de tu equipo agil</p>
     </>
   )
 }
