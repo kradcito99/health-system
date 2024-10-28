@@ -9,7 +9,7 @@ import Login from '../pages/Login';
 import Sign_Up from '../pages/Sign_Up';
 
 import NavBar from '../components/nav_bar';
-import ProtectedRoute from '../components/ProtectedRoute'; // Asegúrate de que la ruta sea correcta
+import ProtectedRoute from '../components/ProtectedRoute'; 
 
 const App = () => {
   const location = useLocation();

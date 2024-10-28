@@ -12,9 +12,8 @@ const Login = () => {
   const handleLogin = (event) => {
     event.preventDefault();
 
-    
     if (username && password) {
-      login();
+      login(username); 
       navigate('/'); 
     } else {
       alert("Por favor, ingresa un nombre de usuario y una contraseña.");
@@ -52,3 +51,4 @@ const Login = () => {
 };
 
 export default Login;
+
