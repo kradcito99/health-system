@@ -1,8 +1,10 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import logo from "../assets/Logo.png"
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import logo from "../assets/Logo.png";
+import { useAuth } from '../context/AuthContext';
 
 export const NavBar = () => {
+  const { isLoggedIn, username, logout } = useAuth();
   const navLinkClass = ({ isActive }) => {
     const classes = ['nav-bar__link']
     if ({isActive : false}) classes.push('nav-bar__link--noactive')
@@ -27,18 +29,19 @@ export const NavBar = () => {
       >
         Tests
       </NavLink>
-      <NavLink
-        className= 'nav-bar__sign'
-        to='/Sign_Up'
-      >
-        Registrarse
-      </NavLink>
-      <NavLink
-        className={`${navLinkClass({ isActive: false })} nav-bar__button`}
-        to='/Login'
-      >
-        Login
-      </NavLink>
+      {isLoggedIn ? (
+        <>
+          <span>Bienvenido, {username}</span>
+          <button className= 'nav-bar_button' onClick={logout}>Cerrar sesión</button>
+        </>
+      ) : (
+        <>
+        <NavLink className= 'nav-bar__sign' to="/Sign_Up">Resgistrarse</NavLink>
+
+        <NavLink className={`${navLinkClass({ isActive: false })} nav-bar__button`} to="/login">Login</NavLink>
+        </>
+      )
+      }
     </nav>
   )
 }
