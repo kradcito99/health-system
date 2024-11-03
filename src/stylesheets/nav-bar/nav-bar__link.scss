@@ -1,67 +1,67 @@
-
-  .nav-bar__link {
-    padding: 8px;
-    text-decoration: none;
-    margin-right: 5px; 
-    &--noactive {
-      background: #ffffff;
-      color: rgb(0, 0, 0);
-      border-radius: 5px;
-    }
-    
-
-    &--active {
-      background: #46dccf;
-      color: white;
-      border-radius: 5px;
-    }
+.nav-bar__link {
+  padding: 8px;
+  text-decoration: none;
+  margin-right: 5px; 
+  &--noactive {
+    background: #1a1a2e;
+    color: #bfc7d5;
+    border-radius: 5px;
   }
 
-  .nav-bar__logo {
-    width: 165px; 
-    height: auto;
-    margin-right: 10px; 
+  &--active {
+    background: #0f3460;
+    color: #ffffff;
+    border-radius: 5px;
   }
-  .nav-bar__sign{
-    padding: 8px;
-    background-color:rgb(90, 155, 16);
-    color: black;
-    margin-left: auto;
-
-  }
-  .nav-bar__button, .nav-bar__buttonclose {
-    border: none;
 }
 
-  .nav-bar__button {
-    background-color: #007bff;
-    color: white;
-    padding: 13px 28px;
-    border-radius: 3px;
-    font-size: 14px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    margin-right: 15px;
-  }
-  .nav-bar__buttonclose {
-    background-color: #007bff;
-    color: white;
-    padding: 13px 18px;
-    border-radius: 3px;
-    font-size: 14px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    margin-right: 15px;
-  }
-  
-  
-  .nav-bar__button:hover {
-    background-color: #0056b3;
-  }
-  .nav-bar__username {
-    font-size: 16px;
-    color: white;
-    margin-left: auto;
-    margin-right: 15px;
-    font-weight: bold;
-  }
+.nav-bar__logo {
+  width: 165px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+.nav-bar__sign {
+  padding: 8px;
+  background-color: #16213e;
+  color: #bfc7d5;
+  margin-left: auto;
+}
+
+.nav-bar__button, .nav-bar__buttonclose {
+  border: none;
+}
+
+.nav-bar__button {
+  background-color: #1b1b2f;
+  color: #bfc7d5;
+  padding: 13px 28px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-right: 15px;
+}
+
+.nav-bar__buttonclose {
+  background-color: #1b1b2f;
+  color: #bfc7d5;
+  padding: 13px 18px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-right: 15px;
+}
+
+.nav-bar__button:hover {
+  background-color: #0a043c;
+}
+
+.nav-bar__username {
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: auto;
+  margin-right: 15px;
+  font-weight: bold;
+}

@@ -1,6 +1,14 @@
 .nav-bar {
   display: flex;
   align-items: center;
-  background-color: rgb(90, 155, 16);
+  background-color: rgb(35, 64, 119);
 
+}
+
+.nav-bar__left-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea los elementos al lado izquierdo */
+  gap: 15px; /* Espacio entre los elementos del lado izquierdo */
+  margin-left: auto;
 }
