@@ -18,7 +18,8 @@
 .nav-bar__logo {
   width: 165px; 
   height: auto;
-  margin-right: 10px; 
+  margin-right: 50px; 
+  margin-left: 50px; 
 }
 
 .nav-bar__sign {
@@ -33,7 +34,7 @@
 }
 
 .nav-bar__button {
-  background-color: #1b1b2f;
+  background-color: rgb(175, 23, 64);
   color: #bfc7d5;
   padding: 13px 28px;
   border-radius: 3px;
@@ -44,7 +45,7 @@
 }
 
 .nav-bar__buttonclose {
-  background-color: #1b1b2f;
+  background-color: rgb(175, 23, 64);
   color: #bfc7d5;
   padding: 13px 18px;
   border-radius: 3px;
@@ -55,7 +56,7 @@
 }
 
 .nav-bar__button:hover {
-  background-color: #0a043c;
+  background-color: rgb(129, 10, 62);
 }
 
 .nav-bar__username {

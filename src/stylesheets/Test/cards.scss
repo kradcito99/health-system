@@ -1,8 +1,8 @@
 /* From Uiverse.io by suleymanlaarabidev */ 
 .card {
-    width: 190px;
-    height: 254px;
-    background: #2c47c2;
+    width: 300px;
+    height: 330px;
+    background: rgb(116, 9, 56);
     transition: all 0.7s;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
@@ -15,7 +15,7 @@
     cursor: pointer;
     transform: scale(1.2);
     box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
-    background: #3759ee;
+    background: rgb(175, 23, 64)e;
   }
   
   .first-content {
@@ -60,5 +60,44 @@
     grid-template-rows: 50% 25%;
     gap: 10px; /* Espacio reducido entre las tarjetas */
     margin: 10px; /* Margen alrededor del contenedor */
+    margin-bottom: 250px;
     justify-items: center; /* Centra horizontalmente las tarjetas en cada celda */
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 5rem; /* Tamaño de fuente más grande */
+  color: white; /* Color blanco */
+  text-align: left; /* Centrar el texto (opcional) */
+  margin-bottom: 20px; /* Espacio inferior opcional */
+}
+
+/* Estilos para el párrafo p */
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem; /* Tamaño de fuente para el párrafo */
+  color: white; /* Color blanco */
+  text-align: left; /* Centrar el texto (opcional) */
+  max-width: 600px; /* Limitar el ancho del párrafo para mejor legibilidad */
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem; /* Tamaño de fuente más grande */
+  color: white; /* Color blanco */
+  text-align: left; /* Centrar el texto (opcional) */
+  margin-bottom: 20px; /* Espacio inferior opcional */
+}
+
+.card-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.card-link:hover {
+  color: #ddd;
 }
