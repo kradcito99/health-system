@@ -1,3 +1,4 @@
+// src/layout/Layout.jsx
 import React from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AuthProvider } from '../context/AuthContext';
@@ -9,7 +10,8 @@ import Login from '../pages/Login';
 import Sign_Up from '../pages/Sign_Up';
 
 import NavBar from '../components/nav_bar';
-import ProtectedRoute from '../components/ProtectedRoute'; 
+import ProtectedRoute from '../components/ProtectedRoute';
+import '../stylesheets/layout/background.scss'; // Asegúrate de tener el archivo SCSS aquí
 
 const App = () => {
   const location = useLocation();
@@ -34,7 +36,9 @@ const App = () => {
 const Layout = () => (
   <AuthProvider>
     <BrowserRouter>
-      <App />
+      <div className="background"> {/* Asegúrate de que este div cubra toda la página */}
+        <App />
+      </div>
     </BrowserRouter>
   </AuthProvider>
 );

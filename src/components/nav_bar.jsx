@@ -19,10 +19,10 @@ export const NavBar = () => {
         <img src={logo} alt='Logo' className='nav-bar__logo' />
       </NavLink>
 
-      <NavLink className={navLinkClass} to='/Diagnostico'>
-        Diagnostico para el equipo
+      <NavLink className='nav-bar__button' to='/Diagnostico'>
+        ¿Que test deberia realizar?
       </NavLink> 
-      <NavLink className={navLinkClass} to='/Test'>
+      <NavLink className='nav-bar__button' to='/Test'>
         Tests
       </NavLink>
 
@@ -33,8 +33,10 @@ export const NavBar = () => {
         </>
       ) : (
         <>
-          <NavLink className='nav-bar__sign' to="/Sign_Up">Registrarse</NavLink>
+          <div className="nav-bar__left-container">
+          <NavLink className='nav-bar__button' to="/Sign_Up">Registrarse</NavLink>
           <NavLink className='nav-bar__button' to="/Login">Login</NavLink>
+          </div>
         </>
       )}
     </nav>
